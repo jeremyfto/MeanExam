@@ -1,0 +1,12 @@
+<a routerLink="">Home</a>
+<h2>Details about {{Pet.name}}</h2>
+<h2>Pet type: </h2><p>{{Pet.type}}</p>
+<h2>Skills:</h2>
+<p *ngIf="Pet.skills['skill1']">{{Pet.skills.skill1}}</p>
+<p *ngIf="Pet.skills['skill2']">{{Pet.skills.skill2}}</p>
+<p *ngIf="Pet.skills['skill3']">{{Pet.skills.skill3}}</p>
+<p><h2>Likes:</h2>{{Likes}}
+<p></p>
+<button *ngIf="IsLiked==false" (click)="LikePet(Pet['_id'])">Like Pet</button>
+<button *ngIf="IsLiked==true" (click)="DontLikePet()">Like Pet</button>
+<button (click)="DelPet(Pet['_id'])">Adopt Pet</button>

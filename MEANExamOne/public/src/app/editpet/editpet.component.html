@@ -1,0 +1,13 @@
+<a routerLink="">Home</a>
+{{Errors}}
+<div>
+    <form (submit)="SavePet()">
+        Name:<input type="text" name="EditPet.name" [(ngModel)]="EditPet.name" /><br>
+        Type:<input type="text" name="EditPet.type" [(ngModel)]="EditPet.type" /><br>
+        Description:<input type="text" name="EditPet.description" [(ngModel)]="EditPet.description" /><br>
+        Skill 1:<input type="text" name="Skill1" [(ngModel)]="Skill1" /><br>
+        Skill 2:<input type="text" name="Skill2" [(ngModel)]="Skill2" /><br>
+        Skill 3<input type="text" name="Skill3" [(ngModel)]="Skill3" /><br>
+        <input type="submit" value="Add Pet" /><button routerLink="">Cancel</button>
+    </form>
+</div>
